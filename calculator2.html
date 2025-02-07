@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator2.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="display-container">
+            <input id="display" readonly>
+        </div>
+        <div id="numbers-container">
+            <div class="column" id="firstcolumn">
+                <button class="delete" onclick="deleteDisplay()">AC</button>
+                <button class="numbers" onclick="displayNumber(7)">7</button>
+                <button class="numbers" onclick="displayNumber(4)">4</button>
+                <button class="numbers" onclick="displayNumber(1)">1</button>
+                <button id="backspace" class="numbers" onclick="backspace()">&#9003;</button>
+            </div>
+            <div class="column" id="secondcolumn">
+                <button class="delete" onclick="makeNegative()">±</button>
+                <button class="numbers" onclick="displayNumber(8)">8</button>
+                <button class="numbers" onclick="displayNumber(5)">5</button>
+                <button class="numbers" onclick="displayNumber(2)">2</button>
+                <button class="numbers" onclick="displayNumber(0)">0</button>
+            </div>
+            <div class="column" id="thirdcolumn">
+                <button class="delete" onclick="percentage()">%</button>
+                <button class="numbers" onclick="displayNumber(9)">9</button>
+                <button class="numbers" onclick="displayNumber(6)">6</button>
+                <button class="numbers" onclick="displayNumber(3)">3</button>
+                <button class="numbers" onclick="displayNumber('.')">,</button>
+            </div>
+            <div class="column"  id="forthcolumn">
+                <button class="operators" onclick="displayNumber('/')">/</button>
+                <button class="operators" onclick="displayNumber('*')">X</button>
+                <button class="operators" onclick="displayNumber('-')">-</button>
+                <button class="operators" onclick="displayNumber('+')">+</button>
+                <button class="operators" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator2.js"></script>
+
+</body>
+</html>
