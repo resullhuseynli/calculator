@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const display = document.getElementById("display");
-
     
     function displayNumber(value) {
         display.value += value;
