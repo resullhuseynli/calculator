@@ -4,9 +4,9 @@ This is a simple web-based calculator application.
 
 ## Project Structure
 
-calculator.html        
-calculator.css
-calculator.js
+calculator2.html        
+calculator2.css
+calculator2.js
 
 ## Files
 
